@@ -1,6 +1,6 @@
 # threadly
 
-See the final product at <a href="https://jeffreyxchan.github.io/threadly/">this link.</a>
+See the final product at <a href="https://jeffreyxchan.github.io/threadly/" target="_blank">this link.</a>
 
 ## Description
 It's a simple webpage that allows a user to type in any random thoughts and comments into the input field. After they press the
