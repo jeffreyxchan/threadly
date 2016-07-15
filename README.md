@@ -1,6 +1,6 @@
 # threadly
 
-Click <a href="https://jeffreyxchan.github.io/threadly/" target="_blank">here</a> to see the project hosted on Github Pages.
+Demo the final product here: [threadly](https://jeffreyxchan.github.io/threadly/ "threadly")
 
-## Description
-A simple interactive webpage built with <b>HTML, CSS, Bootstrap, and jQuery</b>. It appends user input onto the top of a thread of comments below the input field. It simulates the effect of writing down thoughts on scratch paper or a notepad.
+### Description
+A simple interactive webpage built with **HTML**, **CSS**, **Bootstrap**, and **jQuery** that appends user input onto the top of a thread of comments on the page. It simulates the effect of writing down thoughts on scratch paper or a notepad.
