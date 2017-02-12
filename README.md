@@ -1,6 +1,6 @@
 # threadly
 
-Demo the static version here: [threadly-static](http://jeffreyxchan.github.io/threadly/ "threadly")
+Demo the static version here: [threadly-static](http://jeffreyxchan.github.io/threadly/ "threadly")  
 Demo the full application here: [threadly-on-node](https://threadly-on-node.herokuapp.com/ "threadly-on-node")
 
 ### Description

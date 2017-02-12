@@ -100,3 +100,22 @@ li {
 footer {
     margin-top: 30px;
 }
+
+@media (max-width: 768px) {
+    button.btn {
+        display: none;
+    }
+    form input {
+        font-size: 22px;
+        padding: 30px 20px;
+    }
+    h1 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    li {
+        font-size: 22px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
