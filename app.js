@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var Comment = require('./app/models/comments');
 
-mongoose.connect('mongodb://localhost:27017/comments');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/comments');
 
 app = express(); // intialize express app
 
