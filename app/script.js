@@ -9,6 +9,7 @@ var main = function() {
                 var html = $('<li>').text(data[k].comment);
                 html.prependTo('#comments');
             }
+            $('.comments li').click(deleteComment);
         }
     });
     
@@ -25,11 +26,20 @@ var main = function() {
                 var html = $('<li>').text(comment);
                 html.prependTo('#comments');
                 $input.val("");
+                $('.comments li').click(deleteComment);
             }
         });
-        
         return false; // bypasses common browser actions
     });
+    
+    function deleteComment () {
+        $.ajax({
+            url: '/comments',
+            type: 'DELETE',
+            data: $(this)[0].innerHTML
+        });
+        $(this).remove();
+    };
 }
 
 $(document).ready(main);

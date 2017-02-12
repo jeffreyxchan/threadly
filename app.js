@@ -32,7 +32,11 @@ app.get('/comments', function (req, res) {
 });
 
 app.delete('/comments', function(req, res) {
-    Comment.remove({}, function (err, comment) {
+    var text = Object.keys(req.body)[0];
+    
+    Comment.remove({
+        "comment": text
+    }, function (err, comment) {
         res.json({message: 'deleted'});
     });
 });
