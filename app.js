@@ -16,6 +16,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.post('/comments', function (req, res) {
     var message = new Comment();
+    
     var text = Object.keys(req.body);
     message.comment = text[0];
     
