@@ -50,11 +50,11 @@ form input {
     background:#f0f0f0;
     border: none;
     border-left: 2px solid #fff;
-    
+
     font-size: 36px;
     padding: 20px;
     width: 100%;
-    
+
     transition: background 1s, border-left 1s;
 }
 
@@ -68,14 +68,14 @@ form input:focus {
 button.btn {
     background: transparent;
     border: solid #00f28f;
-    
+
     color: #00f28f;
     cursor: pointer;
-    
+
     font-size: 36px;
-    
+
     padding: 20px 24px;
-    
+
     transition: background 1s, color 1s;
 }
 
