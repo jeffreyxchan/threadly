@@ -10,15 +10,16 @@ let main = () => {
     })
 
   $('form').submit(function (event) {
-    let $input = $(event.target).find('input')
-    let comment = $input.val()
+    let input = $(event.target).find('input')
+    let comment = input.val()
 
-    if (comment !== "") {
-      let html = $('<li>').text(comment)
-      $(html).click(deleteComment)
-      html.prependTo('#comments')
-      $input.val("")
-    }
+    $.ajax({ url: 'https://threadly-on-node.herokuapp.com/comments', type:'POST', dataType: 'json', data: comment })
+      .done(() => {
+        let html = $('<li>').text(comment)
+        $(html).click(deleteComment)
+        html.prependTo('#comments')
+        input.val("")
+      })
 
     return false
   })
