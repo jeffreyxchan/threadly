@@ -1,0 +1,23 @@
+{
+  "name": "threadly",
+  "version": "1.0.0",
+  "description": "Desktop app for threadly",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo 'tests passed'",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffreyxchan/threadly.git"
+  },
+  "author": "Jeffrey Chan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeffreyxchan/threadly/issues"
+  },
+  "homepage": "https://github.com/jeffreyxchan/threadly#readme",
+  "devDependencies": {
+    "electron": "^1.6.11"
+  }
+}
