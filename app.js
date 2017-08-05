@@ -1,10 +1,9 @@
 const path = require('path')
 const express = require('express')
 const bodyParser = require('body-parser')
-const mongoose = require('mongoose')
 const threadly = require('./threadly')
 
-app = express() // intialize express app
+app = express()
 
 app.set('port', (process.env.PORT || 3000))
 
@@ -15,6 +14,4 @@ app.use(bodyParser.urlencoded({extended: true}))
 
 app.use(threadly.commentRouter)
 
-app.listen(app.get('port'), () => {
-  console.log('Server started: http://localhost:' + app.get('port') + '/')
-})
+module.exports = app
