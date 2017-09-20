@@ -14,11 +14,11 @@ commentRouter.post('/comments', (req, res) => {
 
   message.save()
 
-  res.json({message: "post request received"})
+  res.json({ message: 'post request received' })
 })
 
 commentRouter.get('/comments', (req, res) => {
-  Comment.find(function (err, comments) {
+  Comment.find((err, comments) => {
     res.json(comments)
   })
 })
@@ -26,10 +26,8 @@ commentRouter.get('/comments', (req, res) => {
 commentRouter.delete('/comments', (req, res) => {
   let text = Object.keys(req.body)[0]
 
-  Comment.remove({
-    "comment": text
-  }, (err, comment) => {
-    res.json({message: 'deleted'})
+  Comment.remove({ comment: text }, (err, comment) => {
+    res.json({ message: 'deleted' })
   })
 })
 
