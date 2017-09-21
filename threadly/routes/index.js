@@ -6,25 +6,23 @@ commentRouter.get('/', (req, res) => {
   res.render('index')
 })
 
-commentRouter.post('/comments', (req, res) => {
-  let message = new Comment()
-
-  let text = Object.keys(req.body)
-  message.comment = text[0]
-
-  message.save()
-
-  res.json({ message: 'post request received' })
-})
-
 commentRouter.get('/comments', (req, res) => {
   Comment.find((err, comments) => {
     res.json(comments)
   })
 })
 
-commentRouter.delete('/comments', (req, res) => {
-  let text = Object.keys(req.body)[0]
+commentRouter.post('/comments/:comment', (req, res) => {
+  let message = new Comment({
+    comment: req.params.comment
+  })
+  message.save()
+
+  res.json({ message: 'post request received' })
+})
+
+commentRouter.post('/comments/delete/:comment', (req, res) => {
+  let text = req.params.comment
 
   Comment.remove({ comment: text }, (err, comment) => {
     res.json({ message: 'deleted' })
