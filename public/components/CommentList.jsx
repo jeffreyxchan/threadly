@@ -4,7 +4,7 @@ const axios = require('axios')
 const CommentList = props => {
   let handleCommentClick = e => {
     e.target.remove()
-    axios.post('http://localhost:3000/comments/delete/' + e.target.innerHTML)
+    axios.post('https://threadly-on-node.herokuapp.com/comments/delete/' + e.target.innerHTML)
   }
 
   let comments = props.comments.slice().reverse()

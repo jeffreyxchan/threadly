@@ -19,7 +19,7 @@ class App extends React.Component {
 
   componentDidMount() {
     axios
-      .get('http://localhost:3000/comments')
+      .get('https://threadly-on-node.herokuapp.com/comments')
       .then(comments => {
         this.setState({
           comments: comments.data
@@ -30,7 +30,7 @@ class App extends React.Component {
 
   handleCommentSubmit(comment) {
     axios
-      .post('http://localhost:3000/comments/' + comment)
+      .post('https://threadly-on-node.herokuapp.com/comments/' + comment)
       .then(() => {
         let newArray = this.state.comments.slice()
         newArray.push({ _id: Math.random(), comment: comment })
