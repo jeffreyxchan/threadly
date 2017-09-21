@@ -1,6 +1,6 @@
 # threadly
 
-Demo the full application here: [threadly-on-node](https://threadly-on-node.herokuapp.com/ "threadly-on-node")
+Demo the full application here: [threadly](http://jeffreyxchan.github.io/threadly/ "threadly")
 
 ### Description
 A dynamic webpage built with MongoDB, Express.js, React.js, and Node.js that takes in user input and appends it onto the top of a list of comments.
